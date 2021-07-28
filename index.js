@@ -24,6 +24,13 @@ $(document).ready(function(){
         $(".menu-right").removeClass("active")
     })
 
+    $(".nav-mobile-menu").click(function(){
+        $(".nav-mb-right").addClass("active")
+        
+    })
+    $(".nav-mobile-close").click(function(){
+        $(".nav-mb-right").removeClass("active")
+    })
 });
 
 

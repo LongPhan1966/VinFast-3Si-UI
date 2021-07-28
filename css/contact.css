@@ -13,6 +13,9 @@ a{
 .mb-20{
     margin-bottom: 20px !important;
 }
+.mb-10{
+    margin-bottom: 10px !important;
+}
 .mb-5{
     margin-bottom: 5px;
 }
@@ -21,6 +24,9 @@ a{
 }
 .mt-20{
     margin-top: 20px !important;
+}
+.mt-10{
+    margin-top: 10px !important;
 }
 .mt-50{
     margin-top: 50px !important;
@@ -55,7 +61,43 @@ a{
     background-color: #fff;
     transform: translateY(5%);
 }
+.vf-home-nav-mobile{
+    display: none;
+}
 
+@media (max-width: 1025px) {
+    .vf-home-nav{
+        display: none;
+    }
+    .vf-home-nav-mobile{
+        display: block;
+        position: relative;
+    }
+}
+
+.nav-mb-right{
+    background-color: #fff;
+    position: fixed;
+    top: 56px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    transition: all 0.3s;
+    z-index: 2;
+    transform: translateX(100%);
+}
+.nav-mb-right.active{
+    transform: translateX(0%);
+}
+.nav-mb-list{
+    margin-left: 50px ;
+}
+.nav-mobile-close{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
 /* -------------------------MEGA MENU CAR AND BIKE---------------------------------------------- */
 
 .header-mega-menu-option{
@@ -255,8 +297,8 @@ a{
     outline: none !important;
     margin-top: 7px;
     border: none;
-    margin-left: 30px;
-    width: 320px;
+    margin-left: 20px;
+    width: 177px;
 }
 .label-info{
     color: #fff;
@@ -320,4 +362,18 @@ footer{
 }
 .footer-language, .footer-connect{
     margin: 0px 20px;
+}
+.footer-mb{
+    display: none;
+    z-index: 5;
+    color: #333;
+}
+
+@media (max-width: 1025px) {
+    .footer-pc{
+        display: none;
+    }
+    .footer-mb{
+        display: block;
+    }
 }

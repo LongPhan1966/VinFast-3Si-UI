@@ -17,7 +17,12 @@ $(".menu-right-open").click(function(){
 $(".menu-right-close").click(function(){
     $(".menu-right").removeClass("active")
 })
-/* $('.stop').on('click',function(){
-    owl.trigger('stop.owl.autoplay')
-}) */
+
+$(".nav-mobile-menu").click(function(){
+    $(".nav-mb-right").addClass("active")
+    
+})
+$(".nav-mobile-close").click(function(){
+    $(".nav-mb-right").removeClass("active")
+})
 });
