@@ -222,8 +222,9 @@ a{
     position: fixed;
     top: 72px;
     background-color: rgb(44,114,198);
-    width: 320px;
+    width: 40%;
     height: 100%;
+    z-index: 1;
 }
 .menu-right.active{
     transform: translateX(-26%);
