@@ -71,7 +71,7 @@ a{
     border-top: 1px solid rgb(187, 187, 187);
     position: fixed;
     left: 0;
-    top: 72px;
+    top: 70px;
     width: 100%;
     display: none;
     z-index: 3;
@@ -204,7 +204,7 @@ a{
     transform: translateX(94%);
     transition: all 0.3s;
     position: fixed;
-    top: 72px;
+    top: 71px;
     background-color: rgb(44,114,198);
     width: 40%;
     height: 100%;
