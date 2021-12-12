@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/fontawesome-free-5.15.3-web/css/all.min.css">
+    <title>CarDetail</title>
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stylehome.css">
+</head>
+<body>
+    <div class="buy-car-table">
+        <div >
+            <img width="100%" class="buy-car-table-img"  src="./img/CarDetail/cars-deposit-desktop.jpg" alt="">
+        </div>
+
+        <div class="vf-car-content container mt-50 mb-50">
+            <div class="content-asset">
+                <nav class="vf-car-product line-bottom">
+                    <ul class="vf-car-product-list row d-flex justify-content-center">
+                        <li class="vf-car-product-item col-sm-4">
+                            <figure class="vf-lux-sa" id="lux-sa" onclick="luxsa()">
+                                <img width="50%" class="car-1" src="./img/CarDetail/LuxSA.jpg" alt="">
+                                <img width="50%" class="car-hover" src="./img/CarDetail/LuxSA-highlight.jpg" alt="">
+                                <figcaption style="font-family: muli,Mulish,source sans pro,sans-serif;" class="car-name">
+                                    LUX SA2.0
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="vf-car-product-item col-sm-4">
+                            <figure class="vf-lux-a" id="lux-a" onclick="luxa()">
+                                <img width="50%" class="car-2" src="./img/CarDetail/LuxA.jpg" alt="">
+                                <img width="50%" class="car-hover" src="./img/CarDetail/LuxA-highlight.jpg" alt="">
+                                <figcaption style="font-family: muli,Mulish,source sans pro,sans-serif;" class="car-name ">
+                                    LUX A2.0
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="vf-car-product-item col-sm-4">
+                            <figure class="vf-fadil" id="fadil" onclick="faDil()">
+                                <img width="50%" class="car-3" src="./img/CarDetail/Fadil.jpg" alt="">
+                                <img width="50%" class="car-hover" src="./img/CarDetail/Fadil-highlight.jpg" alt="">
+                                <figcaption style="font-family: muli,Mulish,source sans pro,sans-serif;" class="car-name">
+                                    FADIL
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="detail-car row mt-50 line-bottom">
+                <div class="img-360 col-6">
+                    <img width="100%" id="img-360" src="./img/CarDetail/LuxSA360.png" alt="">
+                </div>
+
+                <div class="product-car-right col-lg-6"">
+                    <div class="detail-car-option-luxsa  detail-car-option" >
+                        <div class="detail-car-name d-flex justify-content-center line-bottom">
+                            <h3 id="car-name" >LUX SA2.0</h3>
+                        </div>
+                        <div class="detail-car-price d-flex justify-content-center">
+                            <span class="pt-10 mr-20">Số tiền đặt cọc</span>
+                            <span class="">
+                                <b style="font-size: 30px; color: rgb(0,123,255);" class="vf-luxsa">50.000.000</b>
+                                <b style="color: rgb(0,123,255);" class="vf-unit">VND</b>
+                            </span>
+                        </div>
+                        <div class="version-option d-flex justify-content-around mt-20 mb-20">
+                            
+                                <button class="btn-option btn-standard" dir="rtl">TIÊU CHUẨN</button>
+                            
+                            
+                                <button class="btn-option btn-advanded" dir="rtl">NÂNG CAO</button>
+                            
+                            
+                                <button class="btn-option btn-highClass" dir="rtl" >CAO CẤP</button>
+                            
+                        </div>
+                        <div class="exterior-color justify-content-center mb-50">
+                            <p class="exterior-color-title mb-20" >Lựa chọn màu ngoại thất</p>
+                            <div class="exterior-color-option">
+                                <ul class="exterior-color-list d-flex justify-content-center">
+                                    <li class="exterior-color-item rounded-circle active" style="background-color: #fff;"></li>
+                                    <li class="exterior-color-item rounded-circle" style="background-color: rgb(129, 38, 38);"></li>
+                                    <li class="exterior-color-item rounded-circle" style="background-color: rgb(158, 158, 158);"></li>
+                                    <li class="exterior-color-item rounded-circle" style="background-color: rgb(52, 66, 148);"></li>
+                                    <li class="exterior-color-item rounded-circle" style="background-color: #000000;"></li>
+                                    <li class="exterior-color-item rounded-circle" style="background-color: rgb(221, 221, 221);"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="furniture-color mb-50">
+                            <div class="mb-20"><p class="furniture-color-title">Lựa chọn màu nội thất</p></div>
+                            <div class="furniture-color-option">
+                                <ul class="furniture-color-list d-flex justify-content-center">
+                                    <li class="furniture-color-item rounded-circle" style="background-color: black;"></li>
+                                    <li class="furniture-color-item rounded-circle" style="background-color: rgb(125,74,53);"></li>
+                                    <li class="furniture-color-item rounded-circle" style="background-color: rgb(189,174,161);"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="detail-saler pb-50">
+                            <a href="">Chi tiết chính sách bán hàng</a>
+                        </div>
+                    </div >
+                    <div class="detail-car-option-luxa detail-car-option" >
+                        <div class="detail-car-name d-flex justify-content-center line-bottom">
+                            <h3 id="car-name" >LUX A2.0</h3>
+                        </div>
+                        <div class="detail-car-price d-flex justify-content-center">
+                            <span class="pt-10 mr-20">Số tiền đặt cọc</span>
+                            <span class="">
+                                <b style="font-size: 30px; color: rgb(0,123,255);" class="vf-luxsa">50.000.000</b>
+                                <b style="color: rgb(0,123,255);" class="vf-unit">VND</b>
+                            </span>
+                        </div>
+                        <div class="version-option d-flex justify-content-around mt-20 mb-20">
+                            
+                                <button class="btn-option btn-standard" dir="rtl">TIÊU CHUẨN</button>
+                            
+                            
+                                <button class="btn-option btn-advanded" dir="rtl">NÂNG CAO</button>
+                            
+                            
+                                <button class="btn-option btn-highClass" dir="rtl" >CAO CẤP</button>
+                            
+                        </div>
+                        <div class="exterior-color justify-content-center mb-50">
+                            <p class="exterior-color-title mb-20" >Lựa chọn màu ngoại thất</p>
+                            <div class="exterior-color-option">
+                                <ul class="exterior-color-list d-flex justify-content-center">
+                                    <li class="exterior-color-item rounded-circle active" style="background-color: #fff;"></li>
+                                    <li class="exterior-color-item rounded-circle" style="background-color: rgb(129, 38, 38);"></li>
+                                    <li class="exterior-color-item rounded-circle" style="background-color: rgb(158, 158, 158);"></li>
+                                    <li class="exterior-color-item rounded-circle" style="background-color: rgb(52, 66, 148);"></li>
+                                    <li class="exterior-color-item rounded-circle" style="background-color: #000000;"></li>
+                                    <li class="exterior-color-item rounded-circle" style="background-color: rgb(221, 221, 221);"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="furniture-color mb-50">
+                            <div class="mb-20"><p class="furniture-color-title">Lựa chọn màu nội thất</p></div>
+                            <div class="furniture-color-option">
+                                <ul class="furniture-color-list d-flex justify-content-center">
+                                    <li class="furniture-color-item rounded-circle" style="background-color: black;"></li>
+                                    <li class="furniture-color-item rounded-circle" style="background-color: rgb(125,74,53);"></li>
+                                    <li class="furniture-color-item rounded-circle" style="background-color: rgb(189,174,161);"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="detail-saler pb-50">
+                            <a href="">Chi tiết chính sách bán hàng</a>
+                        </div>
+                    </div >
+                    <div class="detail-car-option-fadil detail-car-option" >
+                        <div class="detail-car-name d-flex justify-content-center line-bottom">
+                            <h3 id="car-name" >Fadil</h3>
+                        </div>
+                        <div class="detail-car-price d-flex justify-content-center">
+                            <span class="pt-10 mr-20">Số tiền đặt cọc</span>
+                            <span class="">
+                                <b style="font-size: 30px; color: rgb(0,123,255);" class="vf-luxsa">20.000.000</b>
+                                <b style="color: rgb(0,123,255);" class="vf-unit">VND</b>
+                            </span>
+                        </div>
+                        <div class="version-option d-flex justify-content-around mt-20 mb-20">
+                            
+                                <button class="btn-option btn-standard" dir="rtl">TIÊU CHUẨN</button>
+                            
+                            
+                                <button class="btn-option btn-advanded" dir="rtl">NÂNG CAO</button>
+                            
+                            
+                                <button class="btn-option btn-highClass" dir="rtl" >CAO CẤP</button>
+                            
+                        </div>
+                        <div class="exterior-color justify-content-center mb-50">
+                            <p class="exterior-color-title mb-20" >Lựa chọn màu ngoại thất</p>
+                            <div class="exterior-color-option">
+                                <ul class="exterior-color-list d-flex justify-content-center">
+                                    <li class="exterior-color-item rounded-circle active" style="background-color: #fff;"></li>
+                                    <li class="exterior-color-item rounded-circle" style="background-color: rgb(129, 38, 38);"></li>
+                                    <li class="exterior-color-item rounded-circle" style="background-color: rgb(158, 158, 158);"></li>
+                                    <li class="exterior-color-item rounded-circle" style="background-color: rgb(52, 66, 148);"></li>
+                                    <li class="exterior-color-item rounded-circle" style="background-color: #000000;"></li>
+                                    <li class="exterior-color-item rounded-circle" style="background-color: rgb(221, 221, 221);"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="furniture-color mb-50">
+                            <div class="mb-20"><p class="furniture-color-title">Lựa chọn màu nội thất</p></div>
+                            <div class="furniture-color-option">
+                                <ul class="furniture-color-list d-flex justify-content-center">
+                                    <li class="furniture-color-item rounded-circle" style="background-color: black;"></li>
+                                    <li class="furniture-color-item rounded-circle" style="background-color: rgb(125,74,53);"></li>
+                                    <li class="furniture-color-item rounded-circle" style="background-color: rgb(189,174,161);"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="detail-saler pb-50">
+                            <a href="">Chi tiết chính sách bán hàng</a>
+                        </div>
+                    </div >
+                </div>
+            </div>
+        </div>
+
+        <div class="container customer-infomation-form col-12 col-lg-6 mb-50">
+            <div class="customer-infomation-title">
+                <h5>THÔNG TIN KHÁCH HÀNG</h5>
+            </div>
+            <div class="mt-20">
+                <label for="exampleInputEmail1">Quý khách là</label>
+                <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Cá Nhân / Công Ty">
+            </div>
+            <div class="row mt-20">
+                <div class="col-6">
+                    <label class="fw-700" for="exampleInputEmail1">Họ tên cá nhân</label>
+                    <input type="text" class="form-control" aria-describedby="emailHelp">
+                </div>
+                <div class="col-6">
+                    <label class="fw-700" for="exampleInputEmail1">CMND/CCCD</label>
+                    <input type="text" class="form-control" aria-describedby="emailHelp">
+                </div>
+            </div>
+            <div class="row mt-20">
+                <div class="col-6">
+                    <label class="fw-700" for="exampleInputEmail1">Số điện thoại</label>
+                    <input type="text" class="form-control" aria-describedby="emailHelp">
+                </div>
+                <div class="col-6">
+                    <label class="fw-700" for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" aria-describedby="emailHelp">
+                </div>
+            </div>
+
+            <div class="showroom-option mt-50">
+                <div class="showroom-option-title">
+                    <h5 class="">LỰA CHỌN SHOWROOM MUA XE</h5>
+                </div>
+                <div class="row mt-20">
+                    <div class="col-6">
+                        <label class="fw-700" for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Lựa chọn tỉnh thành">
+                    </div>
+                    <div class="col-6">
+                        <label class="fw-700" for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Lựa chọn Showroom">
+                    </div>
+                </div>
+                <div class="row mt-20">
+                    <div class="col-6">
+                        <label class="fw-700" for="exampleInputEmail1">Họ tên nhân viên tư vấn</label>
+                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Họ tên nhân viên tư vấn bán hàng">
+                    </div>
+                    <div class="col-6">
+                        <label class="fw-700" for="exampleInputEmail1">Mã giới thiệu</label>
+                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Nhập mã người giới thiệu">
+                    </div>
+                </div>
+                <div class="pay-rules mt-50">
+                    <div class="d-flex mb-20">
+                        <input class="input-checkbox-customer" type="checkbox">
+                        <p>
+                            Tôi cam kết các thông tin đã cung cấp tại đây hoàn toàn chính xác.
+                        </p>
+                    </div>
+                    <div class="d-flex mb-20">
+                        <input class="input-checkbox-customer" type="checkbox">
+                        <p>
+                            Tôi đã đọc, hiểu rõ và xác nhận đồng ý với toàn bộ nội dung Điều khoản trong Thỏa Thuận Đặt Cọc trên cũng như Chính Sách Ưu Đãi áp dụng tại thời điểm đặt mua xe ô tô này trên VinFast Online.
+                        </p>
+                    </div>
+                    
+                    <div class="d-flex mb-20">
+                        <input class="input-checkbox-customer" type="checkbox">
+                        <span>
+                            Tôi đồng ý với các Điều kiện & Điều khoản của VinFast Online.
+                        </span>
+                    </div>
+                </div>
+                <div class="radio mt-20">
+                    <p class="fw-700 mb-20">Hình thức thanh toán</p>
+                    <div class="group-input mb-10">
+                        <input  type="radio" class="input-radio-customer" name="input-radio-customer" id="pay-card">
+                        <label class="fw-700" for="pay-card">Thanh toán qua thẻ tín dụng</label>
+                    </div>
+                    <div class="group-input mb-10">
+                        <input type="radio" class="input-radio-customer" name="input-radio-customer" id="pay-atm">
+                        <label class="fw-700" for="pay-atm">Thanh toán qua thẻ ATM nội địa/ Internet Banking</label>
+                    </div>
+                    <div class="group-input mb-10">
+                        <input list="text-radio" type="radio" class="input-radio-customer" name="input-radio-customer" id="pay-bank">
+                        <label class="fw-700" class="" for="pay-bank">Thanh toán qua chuyển khoản ngân hàng</label>
+                    
+                            <h6 class="mt-10">Thông tin chuyển khoản đặt cọc</h6>
+                            <p class="fw-500">Ngân hàng</p>
+                            <span class="fs-13">Ngân hành thương mại cổ phần Kỹ Thương Việt Nam (Techcombank)</span>
+                            <p class="fw-500 mt-10">Số tài khoản</p>
+                            <p class="fs-13">19035192838125</p>
+                            <p class="fw-500 mt-10">Tên tài khoản</p>
+                            <p class="fs-13">CÔNG TY TNHH KINH DOANH THƯƠNG MẠI VÀ DỊCH VỤ VINFAST</p>
+                            <p class="fw-500 mt-10">Nội dung</p>
+                            <P class="fs-13">- CMT nop coc xe LUX SA2.0</P>
+                      
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mt-50">
+                    <button style="width : 200px;" class="btn btn-secondary">Đặt cọc</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="./owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

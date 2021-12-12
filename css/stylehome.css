@@ -6,6 +6,7 @@
 ul, li{
     list-style: none;
 }
+
 a{
     text-decoration: none;
     color: black;
@@ -45,11 +46,20 @@ a{
 .pl-20{
     padding-left: 20px;
 }
+.pt-10{
+    padding-top: 10px;
+}
 .pt-20{
     padding-top: 20px;
 }
+.pb-50{
+    padding-bottom: 50px;
+}
 .line-bd{
     border: 1px solid rgb(223,223,223);
+}
+.line-bottom{
+    border-bottom: 1px solid rgb(223,223,223);
 }
 .br-3{
     border-radius: 3px;
@@ -78,12 +88,30 @@ a{
 .fw-300{
     font-weight: 300;
 }
+.fw-500{
+    font-weight: 500;
+}
+.fw-700{
+    font-weight: 700;
+}
 
 /* -----------------------------NAVBAR PC------------------------------------------ */
-.vf-home-nav{
+.vf-home{
+    width: 100%;
     position: relative;
+   
+}
+.vf-home-nav{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: block;
     font-size: 13px;
+    background-color: #fff;
+    width: 100%;
+    z-index: 6;
+    border-bottom: 1px solid rgb(223,223,223);
 }
 .vf-home-nav-detail{
     margin-top: 17px;
@@ -98,18 +126,25 @@ a{
     border-top: 1px solid rgb(187, 187, 187);
     position: fixed;
     left: 0;
-    top: 72px;
+    top: 71px;
     width: 100%;
     display: none;
     z-index: 3;
     background-color: #fff;
-    transform: translateY(5%);
+    /* transform: translateY(5%); */
+    transition: all 0.3s;
+   
 }
 
 .vf-home-nav-mobile{
     display: none;
 }
 
+.detail-car-option-luxsa.detail-car-option.col-lg-6 ,
+.detail-car-option-luxa.detail-car-option.col-lg-6,
+.detail-car-option-fadil.detail-car-option.col-lg-6{
+    max-width: 100% !important;
+}
 /* -----------------------------NAVBAR MOBILE------------------------------------------ */
 @media (max-width: 1025px) {
     .vf-home-nav{
@@ -152,8 +187,11 @@ a{
     border-bottom: 1px solid rgb(187, 187, 187);
     padding-top: 5px;
 }
-.header-mega-menu-product {
+.header-mega-menu-product-petro {
     margin-top: 17px;
+}
+.header-mega-menu-option-left-link:hover{
+    text-decoration: none;
 }
 .product-name{
     margin-top: 20px;
@@ -189,9 +227,20 @@ a{
 
 .vf-home-nav-option > ul > li:hover>.dropdown{
     display: block;
-    transition: all 0.3s;
-    transform: translateY(0%);
+    animation: xxx .4s;
+  
 }
+@keyframes xxx{
+    from{
+        opacity: 0;
+        transform: translateY(5%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
 #car-menu, #bike-menu{
     position: relative;
 }
@@ -221,13 +270,40 @@ a{
 }
 #congcu-menu::after{
     position: absolute;
-    width: 80px;
+    width: 70px;
     height: 40px;
     content: '';
     top: -30px;
-    left: -14px;
+    right: 690px;
+}
+.header-mega-menu-left{
+    padding: 10px;
+    font-size: 14px;
+    margin-right: 10px;
+    cursor: pointer;
 }
 
+.header-mega-menu-left-petro-active{
+    color: rgb(44,114,198) !important;
+    border-bottom: 2px solid rgb(44,114,198);
+}
+
+.header-mega-menu-product-electro{
+    position: fixed;
+    top: 138px;
+    left: 190px;
+    z-index: -1;
+    background-color: #fff;
+}
+.header-mega-menu-product-petro{
+    z-index: 1;
+    background-color: #fff;
+}
+
+
+.header-mega-menu-product-show{
+    z-index: 2;
+}
 
 /* -------------------------MEGA MENU SERVICE---------------------------------------------- */
 
@@ -247,14 +323,16 @@ a{
 }
 /* -------------------------MEGA MENU CONG CU---------------------------------------------- */
 .dropdown-congcu{
-    background-color: blue;
     z-index: 4;
-    width: 200px;
-    height: 150px;
-    left: 700px;
+    right: 0px;
+    left: 0px;
+    position: fixed;
 }
 .dropdown-congcu-link{
     color: #fff !important;
+}
+.cong-cu-link{
+    font-size: 15px;
 }
 
 /* -------------------------MENU RIGHT---------------------------------------------- */
@@ -296,6 +374,20 @@ a{
 .fa-times{
     margin: 20px 0px 0px 20px;
     color: #fff;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    animation: fadeIn linear 0.2s;
+    z-index: 3;
+}
+.overlay.active{
+    display: block;
 }
 
 /* -------------------------BANNER---------------------------------------------- */
@@ -468,4 +560,143 @@ footer{
     .footer-mb{
         display: block;
     }
+}
+/*------------CAR DETAIL-----------------*/
+
+.vf-lux-sa,
+.vf-lux-a,
+.vf-fadil{
+    position: relative;
+    cursor: pointer;
+}
+.car-1,.car-2,.car-3{
+    margin-left: 80px;
+    z-index: 1;
+}
+.car-hover
+{
+    filter:blur(10px);
+    opacity: 0;
+    position: absolute;
+    left: 0px;
+    margin-left: 80px;
+}
+
+.vf-car-product-list{
+    margin-bottom: 0px !important;
+}
+
+.vf-car-product-item-active{
+    border-bottom: 2px solid rgb(34,59,156);
+    opacity: 1 ;
+}
+
+.car-name{
+    margin-top: 20px;
+    margin-bottom: 18px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+.btn-option{
+    background-color: #fff;
+    border: 1px solid #cecece;
+    border-radius: 3px;
+    font-weight: 500;
+    height: 40px;
+    width: 150px;
+    outline: none;
+    cursor: pointer;
+}
+.btn-option:focus{
+    outline: none;
+}
+
+.furniture-color-title,
+.exterior-color-title,
+.detail-saler{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: muli,Mulish,source sans pro,sans-serif;
+}
+.exterior-color-item,
+.furniture-color-item{
+    position: relative;
+    overflow: hidden;
+    width: 35px;
+    height: 35px;
+    margin: 0 5px;
+}
+.exterior-color-item-active{
+    border: 3px solid rgb(0,123,255);
+}
+
+.furniture-color-item::after,
+.exterior-color-item::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(
+    34.47deg
+    ,rgba(0,0,0,0.5) -22.12%,rgba(0,0,0,0) 87.91%);
+    -webkit-clip-path: polygon(0% 0%,0% 100%,100% 0%);
+    clip-path: polygon(0% 0%,0% 100%,100% 0%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.input-checkbox-customer{
+    margin: 8px 16px 0 0;
+    transform: scale(1.5);
+}
+.input-radio-customer{
+    transform: scale(1.5);
+    margin-right: 10px;
+}
+.btn-option-active{
+    border: 1px solid rgb(0,123,255);
+    color: rgb(0,123,255);
+}
+/* ----------Bao Duong------------ */
+.baoduong-background{
+    background-image: url(../img/baoduong/dat-lich-bao-duong.png);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.baoduong-title{
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 43px;
+    letter-spacing: .345em!important;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.info-content-baoduong{
+    background-color: #fff;
+    height: 700px;
+    width: auto;
+    margin-bottom: 50px;
+}
+.vf-lux-a:hover .car-hover,
+.vf-fadil:hover .car-hover,
+.vf-lux-sa:hover .car-hover {
+    filter: blur(0);
+    opacity: 1;
+}
+
+.car-product-active{
+    display: block !important;
+}
+.detail-car-option-luxsa,
+.detail-car-option-luxa,
+.detail-car-option-fadil{
+    display: none;
 }

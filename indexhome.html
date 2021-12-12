@@ -17,8 +17,9 @@
 <body>
     <header class="vf-home">
         <!------------------------------- NavPC ------------------------------->
-        <div class="vf-home-nav container">
-            <div class="vf-home-nav-detail row ">
+        <div class="vf-home-nav">
+            <div class="container">
+            <div class="vf-home-nav-detail row container">
             <!------------------------ NAVBAR LEFT ------------------------------>
                     <div class="vf-home-nav-option col-7">
                         <ul class="vf-nav-left-list d-flex justify-content-around align-items-center">
@@ -32,56 +33,72 @@
                                         <div class="header-mega-menu">
                                             <div class="header-mega-menu-option d-flex justify-content-between">
                                                 <div class="header-mega-menu-option-left d-flex">
-                                                    <button class="header-mega-menu-left-petro btn btn-link">
-                                                       ĐỘNG CƠ XĂNG
-                                                    </button>
-                                                    <button class="header-mega-menu-left-electro btn btn-link">
-                                                       ĐỘNG CƠ ĐIỆN
-                                                    </button>
+                                                    
+                                                    <div style="color: black;" class="header-mega-menu-left-petro header-mega-menu-left">
+                                                        ĐỘNG CƠ XĂNG
+                                                    </div>
+                                                
+                                                    <div style="color: black;" class="header-mega-menu-left-electro header-mega-menu-left">
+                                                        ĐỘNG CƠ ĐIỆN
+                                                    </div>
+                                                    
                                                 </div>
                                                 <div class="header-mega-menu-option-right">
                                                     <div class="header-mega-menu-option-right-chat">
-                                                       <a href="">YÊU CẦU TƯ VẤN</a>
+                                                        <a href="">YÊU CẦU TƯ VẤN</a>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="header-mega-menu-product row">
-                                                <div class="header-mega-menu-product-info col-md-3">
-                                                    <img src="./img/FadilCar.svg" alt="">
-                                                    <div class="product-name">FADIL</div>
-                                                    <div class="product-sologan">Tối ưu mọi trải nghiệm</div>
-                                                    <div class="product-price">Từ 336.500.000 vnđ</div>
-                                                    <div class="link-detail d-flex justify-content-center">
-                                                        <a style="color: rgb(99,180,230) " href="">Xem chi tiết</a>
+                                            <div class="aaa">
+                                                <div id="petro" class="header-mega-menu-product-petro row tab-pane">
+                                                    <div class="header-mega-menu-product-info col-md-3">
+                                                        <img src="./img/FadilCar.svg" alt="">
+                                                        <div class="product-name">FADIL</div>
+                                                        <div class="product-sologan">Tối ưu mọi trải nghiệm</div>
+                                                        <div class="product-price">Từ 336.500.000 vnđ</div>
+                                                        <div class="link-detail d-flex justify-content-center">
+                                                            <a style="color: rgb(99,180,230) " href="">Xem chi tiết</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="header-mega-menu-product-info col-md-3">
+                                                        <img src="./img/LUX_A_2.0.svg" alt="">
+                                                        <div class="product-name">LUX A2.0</div>
+                                                        <div class="product-sologan">Tận hưởng từng khoảnh khắc</div>
+                                                        <div class="product-price">Từ 881.695.000 vnđ</div>
+                                                        <div class="link-detail d-flex justify-content-center">
+                                                            <a style="color: rgb(99,180,230) " href="">Xem chi tiết</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="header-mega-menu-product-info col-md-3">
+                                                        <img src="./img/LUX_SA_2.0.svg" alt="">
+                                                        <div class="product-name">LUX SA2.0</div>
+                                                        <div class="product-sologan">Chinh phục mọi cung đường</div>
+                                                        <div class="product-price">Từ 1.146.165.000 vnđ</div>
+                                                        <div class="link-detail d-flex justify-content-center">
+                                                            <a style="color: rgb(99,180,230) " href="">Xem chi tiết</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="header-mega-menu-product-info col-md-3">
+                                                        <img src="./img/President.svg" alt="">
+                                                        <div class="product-name">President</div>
+                                                        <div class="product-sologan">Dấu ấn người thủ lĩnh</div>
+                                                        <div class="product-price">Từ 3.800.000.000 vnđ</div>
+                                                        <div class="link-detail d-flex justify-content-center">
+                                                            <a style="color: rgb(99,180,230) " href="">Xem chi tiết</a>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="header-mega-menu-product-info col-md-3">
-                                                    <img src="./img/LUX_A_2.0.svg" alt="">
-                                                    <div class="product-name">LUX A2.0</div>
-                                                    <div class="product-sologan">Tận hưởng từng khoảnh khắc</div>
-                                                    <div class="product-price">Từ 881.695.000 vnđ</div>
-                                                    <div class="link-detail d-flex justify-content-center">
-                                                        <a style="color: rgb(99,180,230) " href="">Xem chi tiết</a>
+                                                <!-- <div id="electro" class="header-mega-menu-product-electro container row tab-pane">
+                                                    <div class="header-mega-menu-product-info col-md-3">
+                                                        <img src="./img/VFe34megamenu.svg" alt="">
+                                                        <div class="product-name">VinFast E-34</div>
+                                                        <div class="product-sologan">Tối ưu mọi trải nghiệm</div>
+                                                        <div class="product-price">Từ 336.500.000 vnđ</div>
+                                                        <div class="link-detail d-flex justify-content-center">
+                                                            <a style="color: rgb(99,180,230) " href="">Xem chi tiết</a>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="header-mega-menu-product-info col-md-3">
-                                                    <img src="./img/LUX_SA_2.0.svg" alt="">
-                                                    <div class="product-name">LUX SA2.0</div>
-                                                    <div class="product-sologan">Chinh phục mọi cung đường</div>
-                                                    <div class="product-price">Từ 1.146.165.000 vnđ</div>
-                                                    <div class="link-detail d-flex justify-content-center">
-                                                        <a style="color: rgb(99,180,230) " href="">Xem chi tiết</a>
-                                                    </div>
-                                                </div>
-                                                <div class="header-mega-menu-product-info col-md-3">
-                                                    <img src="./img/President.svg" alt="">
-                                                    <div class="product-name">President</div>
-                                                    <div class="product-sologan">Dấu ấn người thủ lĩnh</div>
-                                                    <div class="product-price">Từ 3.800.000.000 vnđ</div>
-                                                    <div class="link-detail d-flex justify-content-center">
-                                                        <a style="color: rgb(99,180,230) " href="">Xem chi tiết</a>
-                                                    </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                             <div class="mega-menu-note  d-flex justify-content-center">
                                                 Chính sách bán hàng có thể được cập nhật theo chính sách của VinFast tại từng thời điểm.
@@ -102,15 +119,15 @@
                                         <div class="header-mega-menu-car">
                                             <div class="header-mega-menu-option d-flex justify-content-between">
                                                 <div class="header-mega-menu-option-left d-flex">
-                                                    <button class="header-mega-menu-left-min btn btn-link">
+                                                    <div class="header-mega-menu-left-min header-mega-menu-left">
                                                        PHỔ THÔNG
-                                                    </button>
-                                                    <button class="header-mega-menu-left-minimun btn btn-link">
+                                                    </div>
+                                                    <div class="header-mega-menu-left-minimun header-mega-menu-left">
                                                        TRUNG CẤP
-                                                    </button>
-                                                    <button class="header-mega-menu-left-max btn btn-link">
+                                                    </div>
+                                                    <div class="header-mega-menu-left-max header-mega-menu-left">
                                                        CAO CẤP
-                                                    </button>
+                                                    </div>
                                                 </div>
                                                 <div class="header-mega-menu-option-right">
                                                     <div class="header-mega-menu-option-right-chat">
@@ -162,12 +179,12 @@
                                         <div class="header-mega-menu-car">
                                             <div class="header-mega-menu-option d-flex justify-content-between">
                                                 <div class="header-mega-menu-option-left d-flex">
-                                                    <button class="header-mega-menu-left-serviceCar btn btn-link">
+                                                    <div class="header-mega-menu-left-serviceCar header-mega-menu-left">
                                                        Ô TÔ
-                                                    </button>
-                                                    <button class="header-mega-menu-left-serviceBike btn btn-link">
+                                                    </div>
+                                                    <div class="header-mega-menu-left-serviceBike header-mega-menu-left">
                                                        XE MÁY ĐIỆN
-                                                    </button>
+                                                    </div>
                                                 </div>
                                                 
                                             </div>
@@ -220,17 +237,40 @@
                             <li class="vf-nav-left-items">
                                 <a href="">CÔNG CỤ</a>
                                 <div id="congcu-menu" class="dropdown dropdown-congcu">
-                                    <ul class="dropdown-congcu-list">
-                                        <li class="dropdown-congcu-items"><a class="dropdown-congcu-link" href="">CHI PHÍ LĂN BÁNH</a></li>
-                                        <li class="dropdown-congcu-items"><a class="dropdown-congcu-link" href="">THẨM ĐỊNH VAY</a></li>
-                                    </ul>
+                                    <div class="dropdown-congcu-list mt-20">
+                                       <div class="container fade-up">
+                                           <div class="content row d-flex ">
+                                                <div class="col-md-6 d-flex justify-content-around">
+                                                    <ul>
+                                                        <li>
+                                                            <a class="cong-cu-link" href="">Chi phí Lăn bánh</a>
+                                                        </li>
+                                                        <li class="mt-20">
+                                                            <a class="cong-cu-link" href="">Thẩm định vay</a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li>
+                                                            <a class="cong-cu-link" href="">Chi phí Lăn bánh</a>
+                                                        </li>
+                                                        <li class="mt-20">
+                                                            <a class="cong-cu-link" href="">Thẩm định vay</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <img src="./img/Rectangle 6338 (3)_1627879460.png" alt="">
+                                                </div>
+                                           </div>
+                                       </div>
+                                    </div>
                                 </div>    
                             </li>
                         </ul>
                     </div>
                 
             <!------------------------ NAVBAR RIGHT ------------------------------->
-                <div class="vf-home-nav-right col-5">
+                <div class="vf-home-nav-right col-md-5">
                     <ul class="nav-right-list d-flex justify-content-around align-items-center">
                         <li class="nav-right-items button">
                             <a href="">
@@ -257,6 +297,7 @@
                                     <i class="fas fa-times"></i>
                                     <input hidden type="checkbox" name="" id="menu-right-close-icon">
                                 </label>
+                                
                                 <ul class="menu-right-list">
                                     <li class="menu-right-items">
                                         <a class="menu-right-link" href="">HỆ THỐNG SHOW ROOM VÀ ĐẠI LÝ</a>
@@ -281,6 +322,7 @@
                         </li>
                     </ul>
                 </div>
+            </div>
             </div>
         </div>
         <!------------------------------- NavMOBILE ------------------------------->
@@ -334,7 +376,8 @@
     </header>   
         <!------------------------------- BANNER ------------------------------->
 
-        <section class="vf-home-banner">
+        <label for="menu-right-close-icon" class="overlay"></label>
+        <section class="vf-home-banner mt-50">
             <img class="vf-home-banner-img" src="./img/banner-default.jpg" alt="">
         </section>
 
@@ -827,5 +870,6 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="./index.js"></script>
+    <script src="./js/event.js"></script>
 </body>
 </html>
